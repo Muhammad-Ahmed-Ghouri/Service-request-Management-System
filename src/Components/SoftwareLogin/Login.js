@@ -1,4 +1,5 @@
 import { Box, Button, Grid, TextField, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Login({ onSwitch }) {
   return (
@@ -30,6 +31,8 @@ export default function Login({ onSwitch }) {
           fullWidth
           variant="contained"
           size="large"
+          component={Link}
+          to="/app.problemLog.com"
           sx={{ mt: 3, backgroundColor: "#0F68A9" }}
         >
           Login
